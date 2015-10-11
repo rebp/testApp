@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excellent</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+<!-- Home page -->
+<section data-role="page" id="home">
+
+    <header data-role="header">
+        <img src="images/excellent.jpg" alt="Excellent">
+    </header>
+
+    <article role="main" class="ui-content">   
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#job-list">
+                    <img src="images/job.png" alt="Job">
+                </a>
+                <span>Job Offers</span>
+            </div>
+            <div class="ui-block-b">
+                <a href="#notification">
+                    <img src="images/notification.png" alt="Notifications">
+                </a>
+                <span>Notifications</span>
+            </div>
+            <div class="ui-block-a">
+                <a href="#info">
+                    <img src="images/info.png" alt="Info">
+                </a>
+                <span>Info</span>
+            </div>
+            <div class="ui-block-b">
+                <a href="#benefits">
+                    <img src="images/benefits.png" alt="Benefits">
+                </a>
+                <span>Benefits</span>
+            </div>
+            <div class="ui-block-a">
+                <a href="https://www.facebook.com/pages/excellent-manpower-services/112753002108983">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <span>Facebook</span>
+            </div>
+            <div class="ui-block-b">
+                <a href="#">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+                <span>Instagram</span>
+            </div>        
+        </div>
+    </article>
+
+</section><!-- end Home page -->
+
+<!-- Job list page -->
+<section data-role="page" id="job-list">
+
+     <header data-role="header">
+        <h1>Job Offers</h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+    </article>    
+
+</section><!-- end Job list page -->
+
+<!-- Job requirements page -->
+<section data-role="page" id="job-requirements">
+
+     <header data-role="header">
+        <h1 id="job-name"></h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+      <ul data-role="listview">
+        <li data-role="list-divider">
+            <h1>Requirements</h1>
+        </li>
+        <li>
+            <p>Great personality</p>
+        </li>
+        <li data-role="list-divider">
+            <h1>Languages</h1>
+        </li>
+        <li>
+            <p>English</p>
+        </li>
+        <li>
+            <p>Spanish</p>
+        </li>
+        <li>
+            <p>Papiamento</p>
+        </li>
+        <li data-role="list-divider">
+            <h1>Valid ID's</h1>
+        </li>
+        <li>
+            <p>Dutch passport or Valid working permit</p>
+        </li>
+        <li data-role="list-divider">
+            <h1>Also</h1>
+        </li>
+        <li>
+            <p>Health Card</p>                
+        </li>
+        <li>
+            <p>Censo of 5Fls</p>                
+        </li>
+        <a href="#apply" class="ui-btn">Apply for Job</a>            
+      </ul>
+    </article>    
+</section><!-- end Job requirements page -->
+
+<!-- Apply page -->
+<section data-role="page" id="apply">
+
+     <header data-role="header">
+        <h1>Apply Job</h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+        <form id="myForm" method="post" action="http://rebp.nl/sendForm.php" enctype="multipart/form-data">
+            <div data-role="fieldcontain">
+                <label for="first-name">First name</label>
+                <input type="text" name="fname" id="first-name" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="last-name">Last name</label>
+                <input type="text" name="lname" id="last-name" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" id="phone" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="birthdate">Date of birth</label>
+                <input type="date" name="birthdate" id="birthdate"/>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required/>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="" selected="selected"></option> 
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="status">Martial Status</label>
+                <select id="status" name="status">
+                    <option value="" selected="selected"></option>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widowed">Widowed</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="document">Working Document</label>
+                <select id="document" name="document" required>
+                    <option value="" selected="selected"></option>
+                    <option value="dutch passport">Dutch Passport</option>
+                    <option value="firma libre">Firma Libre</option>
+                    <option value="mariage workin">Mariage Working</option>
+                    <option value="none">None of the above</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="responsable">Are you responsible for anyone under the age of 18?</label>
+                <select id="responsable" name="responsable">
+                    <option value="" selected="selected"></option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="arrested">Have you ever been arrested for violating any law or have you ever been involved in a criminal offence of any kind?</label>
+                <select id="arrested" name="arrested">
+                    <option value="" selected="selected"></option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="address">Current Address</label>
+                <input type="text" name="address" id="address" required>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Languages that you can Speak, Read and Write</legend>
+                      <label for="english">English</label>
+                    <input class="language" type="checkbox" name="language[]" id="english" value="english" checked/>
+                      <label for="spanish">Spanish</label>
+                    <input class="language" type="checkbox" name="language[]" id="spanish" value="spanish" />
+                      <label for="papiamento">Papiamento</label>
+                    <input class="language" type="checkbox" name="language[]" id="papiamento" value="papiamento" />
+                      <label for="dutch">Dutch</label>
+                    <input class="language" type="checkbox" name="language[]" id="dutch" value="dutch" />
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="nationality">Nationality</label>
+                <input type="text" name="nationality" id="nationality" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="position">Position desired or type of work</label>
+                <input type="text" name="position" id="position" required>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="hours">Hours of work (shift) prefered</label>
+                <input type="text" name="hours" id="hours">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="file">C.V (Include work history, at least last 2 jobs)
+                    <input type="file" name="myfile" id="file">
+                </label>
+            </div>
+            <div data-role="fieldcontain">
+                <label for="aboutus">How did you hear about Us</label>
+                <select id="aboutus" name="aboutus" required>
+                <option value="" selected="selected"></option>
+                    <option value="word of mouth">Word of mouth</option>
+                    <option value="diario">Diario</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="radio">Radio</option>
+                </select>
+            </div>
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Please select the Hotels that you have worked before</legend>
+                      <label for="marriot">Marriott</label>
+                    <input type="checkbox" name="hotel[]" id="marriot" value="marriot" />
+                      <label for="ritzcartlon">Ritz Carlton</label>
+                    <input type="checkbox" name="hotel[]" id="ritzcartlon" value="ritz cartlon" />
+                      <label for="renaissance">Renaissance</label>
+                    <input type="checkbox" name="hotel[]" id="renaissance" value="renaissance" />
+                      <label for="divi">Divi Resorts</label>
+                    <input type="checkbox" name="hotel[]" id="divi" value="divi resorts" />
+                      <label for="bucuti">Bucuti</label>
+                    <input type="checkbox" name="hotel[]" id="bucuti" value="bucuti" />
+                      <label for="occidental">Occidental</label>
+                    <input type="checkbox" name="hotel[]" id="occidental" value="occidental" />
+                      <label for="holidayinn">Holiday Inn</label>
+                    <input type="checkbox" name="hotel[]" id="holidayinn" value="holiday inn" />
+                      <label for="mill">The Mill</label>
+                    <input type="checkbox" name="hotel[]" id="mill" value="the mill" />
+                      <label for="none">Not Applicable</label>
+                    <input type="checkbox" name="hotel[]" id="none" value="none" checked/>
+                </fieldset>
+            </div>
+            <div data-role="fieldcontain">
+            <label for="experience">Last Job Experience *</label>
+            <textarea cols="40" rows="8" name="experience" id="experience" placeholder="Write a brief explanation about your last work and the reason for leaving." class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset" required></textarea>
+            </div>
+           <div data-role="fieldcontain">
+                <label for="health">if necessary do you have a valid Health Card?</label>
+                <select id="health" name="health">
+                    <option value="" selected="selected" required></option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+            </div>
+            <input data-role="submit" type="submit" value="Send">
+        </form>
+    </article>    
+
+</section><!-- end Apply page -->
+
+<!-- sendApplication page -->
+<section data-role="page" id="sendApplication">
+
+     <header data-role="header">
+        <h1>Application sent</h1>
+        <a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-home"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+    <p>Thank you for applying for this job. We'll be in touch as soon as we recieve your application.</p>
+    </article>    
+
+</section><!-- end sendApplication page -->
+
+<!-- Info page -->
+<section data-role="page" id="info">
+
+     <header data-role="header">
+        <h1>Info</h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+        <img src="images/excellent.jpg" alt="Excellent">
+        <a id="address" href="https://www.google.nl/maps/place/12%C2%B032'28.5%22N+70%C2%B003'08.9%22W/@12.5411706,-70.052365,20z/data=!4m2!3m1!1s0x0:0x0" class="ui-btn ui-icon-location ui-btn-icon-left ui-corner-all">Italiastraat 50 "Orange Plaza"</a>
+        <a id="email" href="mailto:contact@excellentmps.com​" class="ui-btn ui-icon-mail ui-btn-icon-left ui-corner-all">Email</a>
+        <a id="tel" href="tel:002972804454" class="ui-btn ui-icon-phone ui-btn-icon-left ui-corner-all">Call</a>
+        <p id="kvk" class="ui-btn ui-icon-info ui-btn-icon-left ui-corner-all">KvK: 42104.0</p>
+    </article>    
+
+</section><!-- end Info page -->
+
+<!-- Benefits page -->
+<section data-role="page" id="benefits">
+
+     <header data-role="header">
+        <h1>Benefits</h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+
+    </article>    
+
+</section><!-- end Benefits page -->
+
+<!-- Nitification page -->
+<section data-role="page" id="notification">
+
+     <header data-role="header">
+        <h1>Notifications</h1>
+        <a href="#" class="ui-btn-left ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-back" data-rel="back"></a>
+        <a href="#info" class="ui-btn-right ui-btn ui-btn-inline ui-btn-icon-notext ui-mini ui-corner-all ui-icon-info"></a>
+    </header>  
+
+    <article role="main" class="ui-content">
+        <form id="notificationForm" method="" action="">
+            <fieldset class="ui-field-contain">
+                <label for="job-filter">Filter</label>
+                <select name="select1" id="job-filter" multiple="multiple" data-native-menu="false">
+
+              </select>
+            </fieldset>
+            <fieldset class="ui-field-contain">
+                <label for="ts1">Push new jobs based on your filter</label>
+                <select name="ts1" id="ts1" data-role="flipswitch">
+                    <option value="No" selected="selected">No</option>
+                    <option value="Yes">Yes</option>
+              </select>
+            </fieldset>
+            <input data-role="submit" type="submit" value="Save">
+        </form>
+    </article>    
+
+</section><!-- end Notification Nitification -->
+
+
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+<script src="js/jquery.form.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

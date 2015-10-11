@@ -1,0 +1,83 @@
+#home, #info, #notification, #login, #job-requirements, #apply {
+	background-color: #fff;
+}
+
+header.ui-header.ui-bar-inherit {
+	  background: -webkit-linear-gradient(90deg, #FF9E3E 10%, #ff7f00 90%);
+	  background:    -moz-linear-gradient(90deg, #FF9E3E 10%, #ff7f00 90%);
+	  background:     -ms-linear-gradient(90deg, #FF9E3E 10%, #ff7f00 90%);
+	  background:      -o-linear-gradient(90deg, #FF9E3E 10%, #ff7f00 90%);
+	  background:         linear-gradient(90deg, #FF9E3E 10%, #ff7f00 90%);
+	text-shadow: none;
+	color: #fff;
+}
+
+#home header {
+	border-style: none;
+	margin-top: 10%;
+}
+
+#home img, #info img {
+	display: block;
+	width: 100%;
+}
+
+#home article span {
+	display: block;
+	text-align: center;
+}
+
+#home .ui-grid-a {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#home .ui-block-a {
+	width: 40%;
+	margin-bottom: 8%;
+
+}
+
+#home .ui-block-b {
+	width: 40%;
+	float: right;
+	margin-bottom: 8%;
+}
+
+#info img {
+	margin-top: 10%;
+	margin-bottom: 20%;
+}
+
+/*form validation*/
+
+label.error {
+	color: red;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.4;
+	margin-top: 0.5em;
+	width: 100%;
+	float: none;
+}
+
+.ui-btn:after {
+	background-color: #76c950;
+}
+
+.ui-page-theme-a .ui-bar-inherit {
+	background: -webkit-linear-gradient(90deg, #76c950 10%, #5EAF36 90%);
+	background:    -moz-linear-gradient(90deg, #76c950 10%, #5EAF36 90%);
+	background:     -ms-linear-gradient(90deg, #76c950 10%, #5EAF36 90%);
+	background:      -o-linear-gradient(90deg, #76c950 10%, #5EAF36 90%);
+	background:         linear-gradient(180deg, #FFFFFF 10%, #D4D4D4 90%);
+
+    border: none;
+    color: #000;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+.ui-page-theme-a .ui-body-inherit {
+	background: #fff; 
+}

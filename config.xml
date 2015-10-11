@@ -1,0 +1,58 @@
+<widget 
+  xmlns="http://www.w3.org/ns/widgets" 
+  xmlns:gap="http://phonegap.com/ns/1.0" 
+  id="com.excellent.app" 
+  versionCode="1"
+  version="1.0.0">
+
+  <name>Excellentmps</name>
+
+  <description>
+    Excellent Manpower Services Employment Agency   
+  </description>
+
+  <author href="rebp.nl" email="r.e.bautista.prieto@hotmail.com">
+    Rober Bautista
+  </author>
+
+  <content src="index.html"/>
+
+  <gap:platform name="android" />
+
+  <preference name="phonegap-version" value="3.3.0" />
+  <preference name="orientation" value="portrait" />
+  <preference name="fullscreen" value="false" />
+  <preference name="android-minSdkVersion" value="14" />
+  <preference name="android-installLocation" value="auto" />
+  <preference name="BackgroundColor" value="0xffffffff "/>
+  <preference name="KeepRunning" value="true"/>
+
+    <icon src="images/icons/android/icon-ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="images/icons/android/icon-mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="images/icons/android/icon-hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="images/icons/android/icon-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+    <icon src="images/icons/android/icon-xxhdpi.png" gap:platform="android" gap:density="xxhdpi" />
+
+    <gap:splash src="images/screens/android/screen-ldpi-portrait.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="images/screens/android/screen-mdpi-portrait.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="images/screens/android/screen-hdpi-portrait.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="images/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="images/screens/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xxhdpi" />
+
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+
+    <gap:plugin name="org.apache.cordova.camera"  />
+    <gap:plugin name="org.apache.cordova.geolocation"  />
+    <gap:plugin name="org.apache.cordova.dialogs"  />
+    <gap:plugin name="org.apache.cordova.device"  />
+    <gap:plugin name="org.apache.cordova.network-information"  />
+    <gap:plugin name="org.apache.cordova.console"  />
+    <gap:plugin name="org.apache.cordova.inappbrowser"  />
+    <gap:plugin name="org.apache.cordova.network-information"  />
+    <gap:plugin name="org.apache.cordova.splashscreen"  />
+
+    <access origin="*" subdomains="true" />
+</widget>
